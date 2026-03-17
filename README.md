@@ -205,7 +205,7 @@ You should finish this roadmap able to:
 ### Other high-quality resources
 - **Open tutorials**
   - fast.ai (hands-on deep learning)
-  - Hugging Face official tutorials
+  - Hugging Face official tutorials: https://huggingface.co/learn
   - PyTorch official documentation
 - **Practice platforms**
   - Kaggle (competitions & datasets)
@@ -216,7 +216,7 @@ You should finish this roadmap able to:
   - Tencent Cloud data security guides
   - AWS/Azure cost optimization whitepapers
 - **Industry news**
-  - Synced (机器之心), AI Technology Review (AI科技评论)
+  - Synced, AI Technology Review
   - CSDN AI columns
   - Top conference papers (NeurIPS, ICML)
 
@@ -244,7 +244,7 @@ Use a “Today Execution Card”:
 
 ---
 
-## Security & Cost Checkpoints (贯穿节点)
+## Security & Cost Checkpoints
 
 ### Data privacy protection
 - Week 2: data classification and minimization principles
