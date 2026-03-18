@@ -67,30 +67,85 @@ AI application development usually includes:
 6.  Data minimization principle
 
 ---
+# LLM Model Core Parameter Guide
+### For Job Search & Project Management AI Assistant
 
-## 4) Configuration & Implementation Steps
-### Step 1: Create a Coze Bot
-1.  Log in to the Coze platform and click **Create Bot**
-2.  Name the bot: *AI Basic Knowledge Q&A Assistant*
-3.  Select base model: GPT-4 or equivalent
-4.  Set bot role: *Professional AI education assistant, explaining complex concepts in plain language*
+---
 
-### Step 2: Configure Knowledge Base
-1.  Create knowledge base: *AI Basic Knowledge Base*
-2.  Input or upload the 5 preset questions and answers
-3.  Set knowledge base matching parameters:
-    - Similarity threshold: `0.7`
-    - Max returned segments: `3`
-    - Enable semantic search
+## 1. Protocol Type
+- **Chat Api**  
+  For multi‑round dialogue, automatically maintains context.  
+  ✅ Recommended for job hunting / PM assistant scenarios.
+- **Responses Api**  
+  For one‑time API / tool calls, no context kept.
 
-### Step 3: Design Conversation Flow
-**Opening message**:
-```plaintext
-Hello! I am your AI Basic Knowledge Q&A Assistant. I can answer questions about:
-- What is AI?
-- Differences between Machine Learning & Deep Learning
-- AI application development process
-- Advantages of no-code AI platforms
-- AI data privacy protection
-Which topic would you like to learn about?
+---
+
+## 2. Generation Diversity (Answer Style)
+| Mode | Suitable For | Features |
+|------|-------------|----------|
+| Precise Mode | Professional consulting, interviews, docs | Stable, low hallucination |
+| Balanced Mode | Daily chat | Balanced accuracy & creativity |
+| Creative Mode | Copywriting | Divergent, not professional |
+| Custom | Advanced tuning | Manual slider control |
+
+✅ **Use Precise Mode** (your 0.2/1/0 is default).
+
+---
+
+## 3. Temperature (Randomness)
+- Range: 0 ~ 2.0  
+- Lower = more stable & accurate; Higher = more creative.  
+- Current: 0.2  
+✅ **Keep 0.1–0.3** (professional QA ≤ 0.5).
+
+---
+
+## 4. Top P (Nucleus Sampling)
+- Range: 0 ~ 1.0  
+- Selects from top P% high‑probability words.  
+- Current: 1.0  
+✅ **Keep 0.9–1.0** to avoid rigid answers.
+
+---
+
+## 5. Frequency Penalty (Repetition Control)
+- Range: 0 ~ 2.0  
+- Higher = less repetition.  
+- Current: 0 (preserve professional terms)  
+✅ **Keep 0–0.1**.
+
+---
+
+## 6. Context Rounds
+- Remembers recent N rounds of dialogue.  
+- Current: 3  
+✅ **Set 3–5** (enough for interviews / PM consulting).
+
+---
+
+## 7. Max Reply Length
+- Max characters per response.  
+- Current: 4096  
+✅ **Keep 2048–4096** for long answers.
+
+---
+
+## 8. Max Reasoning & Reply Length
+- Controls total “thinking + answering” length.  
+- Current: 0 (auto by model)  
+✅ **Keep 0**.
+
+---
+
+# ✅ Final Recommended Configuration
+- Protocol: Chat Api  
+- Mode: Precise Mode  
+- Temperature: 0.2  
+- Top P: 1.0  
+- Frequency Penalty: 0  
+- Context Rounds: 3–5  
+- Max Reply Length: 2048–4096  
+- Max Reasoning & Reply Length: 0
+
 
