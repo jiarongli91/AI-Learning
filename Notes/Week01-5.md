@@ -270,17 +270,5 @@ This session uses AWS as the core cloud platform to explore AI service API usage
 2. Mastered cloud cost monitoring tools: used Cost Explorer, Budgets, and CloudWatch to track spending and performance.
 3. Built end‑to‑end security architecture thinking: gained the ability to design complete protection from IAM, encryption, to network security.
 
-### 1 Question / Challenge
-Question: In real projects, how to balance strict security measures and development efficiency? Frequent KMS key rotation and IAM policy updates increase operational overhead—how to find the optimal balance?
+ 
 
-### 1 Insight / Adjustment
-Insight: The real value of cloud AI services is not only technical capability but also pay‑as‑you-go and scalable economics. Even small teams can build enterprise‑grade AI applications. This democratized access drives widespread AI innovation.
-
-## 10. Next Action Plan
-- Tomorrow noon: Review today’s cloud service content and complete the quiz
-- Tomorrow evening: Start Day 6 hands‑on: intelligent customer service prototype development
-- This weekend: Deliver MVP version of the intelligent customer service system
-- Long-term: Continuously monitor cost and performance, iterate security measures
-
-### Core Weekly Goal
-Build a runnable intelligent customer service system on AWS AI services with verified security and cost control.
