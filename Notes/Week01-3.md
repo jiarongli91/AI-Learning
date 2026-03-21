@@ -203,10 +203,16 @@ A. Buy hardware B. Commercial API C. Free tier + open source D. Wait for budget
 
 ## 8. Feynman Retelling
 Explain in plain language:
-- How to choose frameworks for research vs production
-- How to maximize free cloud tiers
-- How to combine Hugging Face, LangChain, LlamaIndex
-- How to manage security and cost end-to-end
+- **1. How to choose frameworks for research vs production**
+ -   **Research**: Choose frameworks with rich APIs, active research communities, and low setup costs (e.g., Hugging Face, PyTorch).
+-   **Production**: Prioritize frameworks with:
+    -   Enterprise support (e.g., AWS SageMaker for HF models)
+    -   Built-in scaling (e.g., TGI for LLM serving)
+    -   Monitoring/observability (e.g., Prometheus integration)
+
+- **2. How to maximize free cloud tiers**
+- **3. How to combine Hugging Face, LangChain, LlamaIndex**
+- **4. How to manage security and cost end-to-end**
 
 ---
 
